@@ -87,10 +87,10 @@ public class SeleniumTestingModular {
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		String expectedTitle = "OrangeHRM";
-		String actualTitle = "";
+		String actualTitle = driver.getTitle();
 
 		// get the actual value of the title
-		actualTitle = driver.getTitle();
+		//actualTitle = driver.getTitle();
 
 		try {
 			Assert.assertEquals(actualTitle, expectedTitle);
