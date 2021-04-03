@@ -96,7 +96,7 @@ public class SeleniumTestingModular {
 			Assert.assertEquals(actualTitle, expectedTitle);
 			System.out.println("Assert web page passed.");
 		} catch (AssertionError e) {
-			System.out.println("Assert web page passed.");
+			System.out.println("Assert web page not passed.");
 			driver.quit();
 		}
 
